@@ -12,7 +12,7 @@ namespace C_Day6LogicalProgramingproblems
         {
             Console.WriteLine("Welcome to the c# basic logical programs");
             Console.WriteLine("Choose the program option from below options");
-            Console.WriteLine("1.Fibonacci Series\n2.PrimeNumber");
+            Console.WriteLine("1.Fibonacci Series\n2.PrimeNumber\n3.ReverseANumber");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -27,7 +27,9 @@ namespace C_Day6LogicalProgramingproblems
                     Console.WriteLine("Enter a integer number");
                     int num1 = Convert.ToInt32(Console.ReadLine());
                     PrimeNumber.FindPrimeNumber(num1);
-                    break;;
+                    break;
+                case 3:
+                    break;
                 default:
                     Console.WriteLine("Please enter valid option.");
                     break;

@@ -17,8 +17,7 @@ namespace C_Day6LogicalProgramingproblems
             //int n = 10;
             int index = 0;
             for (int i=0; i<range; i++)
-            {
-                
+            { 
                 int number = random.Next(1, 11);
                 if (coupons.Contains(number)==false)
                 {
@@ -26,7 +25,6 @@ namespace C_Day6LogicalProgramingproblems
                     index++;
                 }
             }
-            //printing numbers
             Console.WriteLine("The coupon numbers are: ");
             for (int i=0; i<=coupons.Length;i++)
             {

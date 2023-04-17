@@ -34,6 +34,7 @@ namespace C_Day6LogicalProgramingproblems
                     ReverseANumber.ReverseNumber(num2);
                     break;
                 case 4:
+                    //call a method
                     CouponNumber.FindCouponNumbers();
                     break;
                 case 5:

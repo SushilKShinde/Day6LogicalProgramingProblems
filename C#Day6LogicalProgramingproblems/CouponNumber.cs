@@ -15,15 +15,22 @@ namespace C_Day6LogicalProgramingproblems
             int[] coupons = new int[range];
             Random random = new Random();
             //int n = 10;
+            int index = 0;
             for (int i=0; i<range; i++)
             {
-                coupons[i] = random.Next(1, 11);
+                
+                int number = random.Next(1, 11);
+                if (coupons.Contains(number)==false)
+                {
+                    coupons[index] = number;
+                    index++;
+                }
             }
-
+            //printing numbers
             Console.WriteLine("The coupon numbers are: ");
             for (int i=0; i<=coupons.Length;i++)
             {
-                Console.WriteLine(coupons[i]);
+                Console.Write(" "+coupons[i]);
             }
         }
     }

@@ -13,7 +13,7 @@ namespace C_Day6LogicalProgramingproblems
             Console.WriteLine("Welcome to the c# basic logical programs");
             Console.WriteLine("Choose the program option from below options");
             Console.WriteLine("1.Fibonacci Series\n2.PrimeNumber\n3.ReverseANumber\n4.CouponNumber\n5.Stopwatch" +
-                "\n6.PerfectNumber\n7.DayOfWeek\n8.TemperatureConversion");
+                "\n6.PerfectNumber\n7.DayOfWeek\n8.TemperatureConversion\n9.MonthlyPayment");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -56,11 +56,12 @@ namespace C_Day6LogicalProgramingproblems
                     int year = Convert.ToInt32(Console.ReadLine());
                     DayOfWeek.FindDayOfweek(day, month, year);
                     break;
-                case 8:
-                    //Console.WriteLine("Enter the ");
-                    //double temperature = Convert.ToInt32(Console.ReadLine());
+                case 8:                
                     TemperatureConversion.ConvertCelsiusTofahrenheit();
                     TemperatureConversion.ConvertFahrenheitToCelcius();
+                    break;
+                case 9:
+                    MonthlyPayment.CalculateMonthlyPayment();
                     break;
                 default:
                     Console.WriteLine("Please enter valid option.");

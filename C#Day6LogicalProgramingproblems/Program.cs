@@ -14,7 +14,7 @@ namespace C_Day6LogicalProgramingproblems
             Console.WriteLine("Choose the program option from below options");
             Console.WriteLine("1.Fibonacci Series\n2.PrimeNumber\n3.ReverseANumber\n4.CouponNumber\n5.Stopwatch" +
                 "\n6.PerfectNumber\n7.DayOfWeek\n8.TemperatureConversion\n9.MonthlyPayment\n10.BinaryToDecimalConversion" +
-                "\n11.SquareRootOfPositiveInteger");
+                "\n11.SquareRootOfPositiveInteger\n12.Vending Machine");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -73,6 +73,11 @@ namespace C_Day6LogicalProgramingproblems
                     Console.WriteLine("Enter a integer number");
                     num = Convert.ToInt32(Console.ReadLine());
                     SquareRoot.FindSquareRoot(num);
+                    break;
+                case 12:
+                    Console.WriteLine("Please enter the amount");
+                    int amount = Convert.ToInt32(Console.ReadLine());   
+                    VendingMachine.GetMinimumNumbersOfNotes(amount);
                     break;
                 default:
                     Console.WriteLine("Please enter valid option.");

@@ -20,6 +20,7 @@ namespace C_Day6LogicalProgramingproblems
                 num = num / 2;
             }
             Console.WriteLine("Binary Conversion: "+ binary);
+ 
         }
     } 
 }
